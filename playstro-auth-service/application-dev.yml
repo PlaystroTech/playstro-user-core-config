@@ -1,0 +1,14 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/playstro_auth_db
+    username: root
+    password: 12345678
+
+server:
+  port: 8090
+
+logging:
+  level:
+    in.playstro.auth.config: DEBUG
+    io.r2dbc.spi: INFO
+    io.r2dbc.mysql: INFO

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: playstro-auth-service
+  webflux:
+    base-path: /api/auth
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
