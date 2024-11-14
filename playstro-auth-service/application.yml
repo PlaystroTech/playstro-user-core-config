@@ -1,6 +1,8 @@
 spring:
   application:
     name: playstro-auth-service
+  profiles:
+    include: common
   webflux:
     base-path: /api/auth
   data:
