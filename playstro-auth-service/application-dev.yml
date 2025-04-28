@@ -12,3 +12,4 @@ logging:
     in.playstro.auth.config: DEBUG
     io.r2dbc.spi: INFO
     io.r2dbc.mysql: INFO
+  

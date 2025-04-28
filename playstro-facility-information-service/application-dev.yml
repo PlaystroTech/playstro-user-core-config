@@ -1,0 +1,14 @@
+spring:
+    data:
+        mongodb:
+        uri: mongodb://root:12345678@mongo1:27017,mongo2:27017,mongo3:27017/test?replicaSet=rs0&authSource=admin
+        database: playstro_facility_information_db
+        authentication-database: admin
+    r2dbc:
+        url: r2dbc:mysql://localhost:3306/playstro_user_management_db
+        username: root
+        password: 12345678
+
+
+server:
+    port: 8093

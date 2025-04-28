@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: playstro-facility-information-service
+  profiles:
+    include: common
+  webflux:
+    base-path: /api/facility
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+    mongodb:
+      repositories:
+        type: reactive
+  cloud:
+    config:
+      allow-override: true
+      override-none: true
+
+playstro:
+  fis:
+    google:
+      places:
+        api:
+          key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          placeDetailsUrl: https://places.googleapis.com/v1/places/
+          fields:
+            name, id, displayName, types, primaryType, primaryTypeDisplayName, nationalPhoneNumber,
+            internationalPhoneNumber, formattedAddress, shortFormattedAddress, postalAddress,
+            addressComponents, plusCode, location, rating, googleMapsUri, websiteUri, reviews,
+            timeZone, photos, businessStatus, priceLevel, iconMaskBaseUri, iconBackgroundColor,
+            editorialSummary, paymentOptions, parkingOptions, generativeSummary, containingPlaces,
+            googleMapsLinks, priceRange, utcOffsetMinutes, userRatingCount, takeout, delivery, dineIn,
+            curbsidePickup, reservable, servesBreakfast, servesLunch, servesDinner, servesBeer, servesWine,
+            servesBrunch, servesVegetarianFood, outdoorSeating, liveMusic, menuForChildren, servesCocktails,
+            servesDessert, servesCoffee, goodForChildren, allowsDogs, restroom, goodForGroups, goodForWatchingSports,
+            accessibilityOptions, pureServiceAreaBusiness

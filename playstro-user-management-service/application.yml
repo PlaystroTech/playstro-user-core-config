@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: playstro-user-management-service
+  profiles:
+    include: common
+  webflux:
+    base-path: /api/user
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
